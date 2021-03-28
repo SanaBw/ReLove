@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1040973382541",
+    "firebase_url": "https://relove-9c155-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "relove-9c155",
+    "storage_bucket": "relove-9c155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040973382541:android:c59fdd6dfb6f1dadca73c4",
+        "android_client_info": {
+          "package_name": "com.sanida.relove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040973382541-136dpeofervq62dnmt215e4cvjjr605m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanida.relove",
+            "certificate_hash": "6252d553bb9a617e10725cbb26beb820719e73a4"
+          }
+        },
+        {
+          "client_id": "1040973382541-vn8pmdrme5jai66dqc7cinmcmd4nb2md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBecTC7838YtEcnmF-6jD5Q8wLz74eLfoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040973382541-vn8pmdrme5jai66dqc7cinmcmd4nb2md.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

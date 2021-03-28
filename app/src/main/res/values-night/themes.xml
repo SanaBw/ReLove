@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ReLove" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#b19cd9</item>
+        <item name="colorPrimaryVariant">#9cc4d9</item>
+        <item name="colorOnPrimary">#221639</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#c4d99c</item>
+        <item name="colorSecondaryVariant">#d9d09c</item>
+        <item name="colorOnSecondary">#2d3916</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionBarSize">0dp</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

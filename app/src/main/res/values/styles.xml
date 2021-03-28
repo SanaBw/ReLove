@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Retroholic">
+        <item name="android:fontFamily">@font/retroholic</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">10</item>
+    </style>
+
+    <style name="Timeless">
+        <item name="android:fontFamily">@font/timeless</item>
+    </style>
+
+
+    <style name="ToolbarStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">38sp</item>
+    </style>
+</resources>
