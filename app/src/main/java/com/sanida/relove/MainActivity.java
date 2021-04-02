@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +19,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -92,12 +95,28 @@ public class MainActivity extends AppCompatActivity {
     private void OpenCart(ArrayList<Shop> items){
         dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        //dialog.setContentView(R.layout.shop_item);
+        dialog.setContentView(R.layout.cart);
         dialog.setCancelable(true);
         dialog.show();
         dialog.setCanceledOnTouchOutside(true);
 
-        //TextView itemName = dialog.findViewById(R.id.item_name);
+        TextView cartText = dialog.findViewById(R.id.cart_text);
+        Button checkout = dialog.findViewById(R.id.checkout_btn);
+        TextView cartTitle = dialog.findViewById(R.id.cart_title);
+        cartTitle.setTextAppearance( R.style.RetroholicFont);
+
+        String cartString = "";
+
+        for (Shop s:items) {
+            cartString += s.getName() + ": " + s.getPrice()+"\n\n";
+        }
+
+        if (cartString.equals("")){
+            cartString = "Your cart is empty";
+        }
+            cartText.setText(cartString);
+
+
     }
 
 }

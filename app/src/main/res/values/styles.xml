@@ -7,7 +7,9 @@
         <item name="android:shadowDy">5</item>
         <item name="android:shadowRadius">10</item>
     </style>
-
+    <style name="RetroholicFont">
+        <item name="android:fontFamily">@font/retroholic</item>
+    </style>
     <style name="Timeless">
         <item name="android:fontFamily">@font/timeless</item>
     </style>

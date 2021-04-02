@@ -19,7 +19,7 @@ public class ChatFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_outfits, container, false);
+        View root = inflater.inflate(R.layout.fragment_chat, container, false);
 
 
         return root;

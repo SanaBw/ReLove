@@ -50,6 +50,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
     }
+    public boolean addToCart(Outfit outfit) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("ITEM_NAME", outfit.getName());
+        cv.put("ITEM_PRICE", outfit.getPrice());
+
+        long insert = db.insert("CART_TABLE", null, cv);
+
+        if (insert==-1){
+            return false;
+        } else {
+            return true;
+        }
+    }
 
     public ArrayList<Shop> getItems(){
         ArrayList<Shop> shops = new ArrayList<>();
@@ -75,4 +89,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return shops;
     }
+
+
 }
